@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="966640a8-22a9-4cc9-b322-385c5f6f4e51" name="user@DESKTOP-0FU467I 2022-10-04 19:17:46" runUser="DESKTOP-0FU467I\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-10-04T19:17:46.2060322+05:00" queuing="2022-10-04T19:17:46.2060322+05:00" start="2022-10-04T19:17:28.5850342+05:00" finish="2022-10-04T19:20:12.0848577+05:00" />
+  <TestSettings name="default" id="6ac1bb05-ac56-4618-b848-a7196426d01b">
+    <Deployment runDeploymentRoot="user_DESKTOP-0FU467I_2022-10-04_19_17_46" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f94ec9a5-ac39-457c-b5c3-6232f04f102c" testId="b3a6e05a-3b0c-46f2-a52d-203ef2a93cde" testName="searchExc" computerName="DESKTOP-0FU467I" duration="00:00:20.3948797" startTime="2022-10-04T19:17:46.1085794+05:00" endTime="2022-10-04T19:18:06.5055371+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f94ec9a5-ac39-457c-b5c3-6232f04f102c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UnitTestProject3.UnitTest1.searchExc threw exception: &#xD;
+OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type="submit" class="button-1 search-button" value="Search"&gt; is not clickable at point (1317, 390). Other element would receive the click: &lt;iframe name="fdcfe41123904c" width="1000px" height="1000px" data-testid="dialog_iframe" title="" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v10.0/plugins/customerchat.php?app_id=&amp;amp;attribution=setup_tool&amp;amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df242d934e71b9%26domain%3Dpakautoparts.pk%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fpakautoparts.pk%252Ff160e4fbb49b6dc%26relation%3Dparent.parent&amp;amp;container_width=1519&amp;amp;current_url=https%3A%2F%2Fpakautoparts.pk%2F&amp;amp;is_loaded_by_facade=true&amp;amp;locale=en_US&amp;amp;log_id=1cd857ea-2e65-4bab-8d58-97e4c2274f1b&amp;amp;page_id=105999538166402&amp;amp;request_time=1664893081221&amp;amp;sdk=joey&amp;amp;theme_color=%230A7CFF" style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; background: none; width: 399px; bottom: 84px; max-height: calc(100% - 84px); right: 16px; visibility: visible; height: 444px;" class=""&gt;&lt;/iframe&gt;
+  (Session info: chrome=105.0.5195.127)</Message>
+          <StackTrace>    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at UnitTestProject3.CommonMethods.clickable_items(By path) in C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\CommonMethods.cs:line 54&#xD;
+   at UnitTestProject3.searchfunctionality.searchfunc() in C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\searchfunctionality.cs:line 27&#xD;
+   at UnitTestProject3.UnitTest1.searchExc() in C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\UnitTest1.cs:line 49&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ea71b540-f60a-4d37-93d3-9a1614f5fb09" testId="29c1bd9a-13f1-4d2e-afad-0c4c43aecb25" testName="loginExe" computerName="DESKTOP-0FU467I" duration="00:00:14.0863863" startTime="2022-10-04T19:17:31.7865200+05:00" endTime="2022-10-04T19:17:46.0645850+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea71b540-f60a-4d37-93d3-9a1614f5fb09" />
+    <UnitTestResult executionId="fa1ba3f3-9f7d-4bee-acee-45d9d33530de" testId="59ba6cc7-e467-48cb-b010-e365624707c9" testName="contactExc" computerName="DESKTOP-0FU467I" duration="00:00:43.5172042" startTime="2022-10-04T19:18:06.5085136+05:00" endTime="2022-10-04T19:18:50.0481042+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa1ba3f3-9f7d-4bee-acee-45d9d33530de" />
+    <UnitTestResult executionId="2510a069-adae-4fcc-81b9-5cb32dacb449" testId="193df35a-cb7e-41eb-9120-059c0851a709" testName="loginfunctiion (Data Row 0)" computerName="DESKTOP-0FU467I" duration="00:00:57.5299094" startTime="2022-10-04T19:19:11.9309843+05:00" endTime="2022-10-04T19:20:10.5783153+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2510a069-adae-4fcc-81b9-5cb32dacb449" />
+    <UnitTestResult executionId="9d23b532-daa4-452d-ad0d-6cd2377bdec2" testId="f810415a-b0d5-46de-b387-c6661a14b1fb" testName="navigationExc" computerName="DESKTOP-0FU467I" duration="00:00:21.8811258" startTime="2022-10-04T19:18:50.0491036+05:00" endTime="2022-10-04T19:19:11.9309843+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d23b532-daa4-452d-ad0d-6cd2377bdec2" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="loginfunctiion (Data Row 0)" storage="c:\users\user\source\repos\unittestproject3\unittestproject3\bin\debug\unittestproject3.dll" id="193df35a-cb7e-41eb-9120-059c0851a709">
+      <Execution id="2510a069-adae-4fcc-81b9-5cb32dacb449" />
+      <TestMethod codeBase="C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\bin\Debug\UnitTestProject3.dll" adapterTypeName="executor://mstestadapter/v2" className="UnitTestProject3.UnitTest1" name="loginfunctiion" />
+    </UnitTest>
+    <UnitTest name="searchExc" storage="c:\users\user\source\repos\unittestproject3\unittestproject3\bin\debug\unittestproject3.dll" id="b3a6e05a-3b0c-46f2-a52d-203ef2a93cde">
+      <Execution id="f94ec9a5-ac39-457c-b5c3-6232f04f102c" />
+      <TestMethod codeBase="C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\bin\Debug\UnitTestProject3.dll" adapterTypeName="executor://mstestadapter/v2" className="UnitTestProject3.UnitTest1" name="searchExc" />
+    </UnitTest>
+    <UnitTest name="contactExc" storage="c:\users\user\source\repos\unittestproject3\unittestproject3\bin\debug\unittestproject3.dll" id="59ba6cc7-e467-48cb-b010-e365624707c9">
+      <Execution id="fa1ba3f3-9f7d-4bee-acee-45d9d33530de" />
+      <TestMethod codeBase="C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\bin\Debug\UnitTestProject3.dll" adapterTypeName="executor://mstestadapter/v2" className="UnitTestProject3.UnitTest1" name="contactExc" />
+    </UnitTest>
+    <UnitTest name="loginExe" storage="c:\users\user\source\repos\unittestproject3\unittestproject3\bin\debug\unittestproject3.dll" id="29c1bd9a-13f1-4d2e-afad-0c4c43aecb25">
+      <Execution id="ea71b540-f60a-4d37-93d3-9a1614f5fb09" />
+      <TestMethod codeBase="C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\bin\Debug\UnitTestProject3.dll" adapterTypeName="executor://mstestadapter/v2" className="UnitTestProject3.UnitTest1" name="loginExe" />
+    </UnitTest>
+    <UnitTest name="navigationExc" storage="c:\users\user\source\repos\unittestproject3\unittestproject3\bin\debug\unittestproject3.dll" id="f810415a-b0d5-46de-b387-c6661a14b1fb">
+      <Execution id="9d23b532-daa4-452d-ad0d-6cd2377bdec2" />
+      <TestMethod codeBase="C:\Users\user\source\repos\UnitTestProject3\UnitTestProject3\bin\Debug\UnitTestProject3.dll" adapterTypeName="executor://mstestadapter/v2" className="UnitTestProject3.UnitTest1" name="navigationExc" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b3a6e05a-3b0c-46f2-a52d-203ef2a93cde" executionId="f94ec9a5-ac39-457c-b5c3-6232f04f102c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29c1bd9a-13f1-4d2e-afad-0c4c43aecb25" executionId="ea71b540-f60a-4d37-93d3-9a1614f5fb09" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59ba6cc7-e467-48cb-b010-e365624707c9" executionId="fa1ba3f3-9f7d-4bee-acee-45d9d33530de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="193df35a-cb7e-41eb-9120-059c0851a709" executionId="2510a069-adae-4fcc-81b9-5cb32dacb449" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f810415a-b0d5-46de-b387-c6661a14b1fb" executionId="9d23b532-daa4-452d-ad0d-6cd2377bdec2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

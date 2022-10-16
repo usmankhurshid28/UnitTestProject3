@@ -17,12 +17,13 @@ namespace UnitTestProject3
         By login_submit_btn = By.XPath("//input[@value='Log in']");
 
         #endregion
-        public void loginFunctionality()
+        public void loginFunctionality(string uName, string uPassword)
         {
             clickable_items(login_btn);
-            textfiled(email_login, "muusmanlhr1@gmail.com");
-            textfiled(pass_login, "test1234");
+            textfiled(email_login, uName);
+            textfiled(pass_login, uPassword);
             clickable_items(login_submit_btn);
         }
+        
     }
 }

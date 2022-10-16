@@ -27,9 +27,9 @@ namespace UnitTestProject3
             textfiled(C_full_name, "Myname");
             textfiled(C_phone_no, "03102222340");
             textfiled(C_email, "muusmanlhr1@gmail.com");
-            textfiled(C_message, "My message");
+            textfiled(C_message, "My message is ");
             Thread.Sleep(5000);
-            clickable_items(C_submit_btn);
+            scrolltoelement_click(C_submit_btn);
 
         }
 
