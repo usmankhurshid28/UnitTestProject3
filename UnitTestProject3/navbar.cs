@@ -14,10 +14,10 @@ namespace UnitTestProject3
 
         By Nav_Bar_Accessories = By.XPath("//span[text()='Accessories']");
         By Accessories_nav1 = By.XPath("//a[text()='Floor Mats ']");
-        By opt_select = By.XPath("//a[text()=' Honda Civic 2016-21 Floor Mat ']");
-        By addtowishlist = By.Id("add-to-wishlist-button-11409");
-        By wishlisht_btn = By.XPath("//span[text()=' My Wishlist']");
-        By checkbox_removewishlist = By.XPath("//input[@type='checkbox' and @name='removefromcart']");
+        By opt_select = By.XPath("//a[text()=' Car Transparent Universal Matt (3pcs) ']");
+        By addtowishlist = By.Id("add-to-wishlist-button-11898");
+        By wishlisht_btn = By.LinkText("wishlist");
+        By checkbox_removewishlist = By.XPath("//input[@type='checkbox' and @name='removefromcart' and @value='31968']");
         By updatewishlist = By.Name("updatecart");
         By addToCart_boxselect = By.XPath("//input[@type='checkbox' and @name='addtocart']");
         By addToCart_btn = By.Name("addtocartbutton");
@@ -40,8 +40,6 @@ namespace UnitTestProject3
         By shippingcontinue_btn = By.XPath("//input[@type='button' and @onclick='ShippingMethod.save()' and @value='Continue']");
         By paymentsave_btn = By.XPath("//input[@type='button' and @onclick='PaymentInfo.save()' and @value='Continue']");
         By confirmorder_btn = By.XPath("//input[@type='button' and @onclick='ConfirmOrder.save()' and @value='Confirm']");
-
-
 
 
         #endregion
@@ -80,9 +78,14 @@ namespace UnitTestProject3
         {
             hover(Nav_Bar_Accessories);
             scrolltoelement_click(Accessories_nav1);
+            hover(opt_select);
             scrolltoelement_click(opt_select);
             scrolltoelement_click(addtowishlist);
+            Thread.Sleep(3000);
             scrolltoelement_click(wishlisht_btn);
+            Thread.Sleep(2000);
+            chechkbox_item(checkbox_removewishlist);
+
         }
         public void accessorieswishlistRemovefunction()
 

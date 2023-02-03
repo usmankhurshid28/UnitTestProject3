@@ -44,6 +44,26 @@ namespace UnitTestProject3
         {
             driver.Close();
         }
+        public void scrollPageDown()
+        {
+            IJavaScriptExecutor scroller = (IJavaScriptExecutor)driver;
+            for (int i = 0; i < 1000; i++)
+            {
+             scroller.ExecuteScript("window.scrollBy(0," + i + ")", "");
+            }
+        }
+
+        public void scrollPageUp()
+        {
+            IJavaScriptExecutor scroller = (IJavaScriptExecutor)driver;
+            for (int i = 0; i < 1000; i--)
+            {
+                scroller.ExecuteScript("window.scrollBy(0," + i + ")", "");
+            }
+            
+        }
+
+
         public IWebElement findelement(By path)
         {
             return driver.FindElement(path);
@@ -81,6 +101,12 @@ namespace UnitTestProject3
             IWebElement mydrop = findelement(path);
             SelectElement mydropdown = new SelectElement(mydrop);
             mydropdown.SelectByIndex(myvalue);
+        }
+        public void dropdownitem_byitext(By path, string myvalue)
+        {
+            IWebElement mydrop = findelement(path);
+            SelectElement mydropdown = new SelectElement(mydrop);
+            mydropdown.SelectByText(myvalue);
         }
 
         public IWebElement explicitwaitelement(By path)
@@ -129,5 +155,14 @@ namespace UnitTestProject3
             Actions myaction = new Actions(driver);
             myaction.MoveToElement(myelement).Build().Perform();
         }
+
+        
+
+
+
+
+
+
+
     }
 }

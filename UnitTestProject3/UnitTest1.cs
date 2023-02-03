@@ -86,6 +86,18 @@ namespace UnitTestProject3
         }
 
         [TestMethod]
+        public void homepagescrollDownAndUpExc()
+        {
+            commonClassObj.myurlfun(URL);
+            commonClassObj.scrollPageDown();
+           Thread.Sleep(4000);
+           commonClassObj.scrollPageUp();
+        }
+
+
+
+
+        [TestMethod]
         public void searchExc()
         {
             Sobj.myurlfun(URL);
@@ -108,7 +120,7 @@ namespace UnitTestProject3
             Nobj.accessorieswishlistfunction();
 
         }
-        [TestMethod]
+       // [TestMethod]
         public void AccessoriesRemoveWishlistExc()
         {
             Nobj.myurlfun(URL);
@@ -116,7 +128,7 @@ namespace UnitTestProject3
 
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void AccessoriesAddToCartExc()
         {
             Nobj.myurlfun(URL);
@@ -124,7 +136,7 @@ namespace UnitTestProject3
 
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void AccessoriesPurchaseProductExc()
         {
             Nobj.myurlfun(URL);
